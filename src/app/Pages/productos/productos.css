@@ -1,0 +1,69 @@
+
+/* Contenedor de productos en GRID */
+.carrusel-item {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 25px !important;
+  padding: 30px;
+  background-color: #f5f7fa;
+  align-items: stretch;
+}
+
+/* Tarjetas */
+.card {
+  width: 100% !important;
+  height: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 15px;
+  background: white;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Efecto hover */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12) !important;
+}
+
+/* Imágenes */
+.card-img-top {
+  width: 100%;
+  height: 200px !important;
+  object-fit: contain;
+  padding: 20px !important;
+}
+
+/* Información del producto */
+.card-body {
+  padding: 18px;
+}
+
+/* Títulos */
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #222;
+}
+
+/* Precios */
+.text-success {
+  color: #16803c !important;
+  font-size: 23px !important;
+  font-weight: bold;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .carrusel-item {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .carrusel-item {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+}

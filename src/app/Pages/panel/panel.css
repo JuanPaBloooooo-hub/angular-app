@@ -1,0 +1,50 @@
+
+.contenedor {
+  padding: 30px;
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #222;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th {
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  text-align: left;
+}
+
+td {
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+img {
+  width: 65px;
+  height: 65px;
+  object-fit: contain;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.borrar {
+  background-color: #dc3545;
+}
+
+.actualizar {
+  background-color: #0d6efd;
+}
